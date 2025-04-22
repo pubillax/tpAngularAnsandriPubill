@@ -30,12 +30,3 @@ cuentaBancariaRouter.delete('/delete/id/:id', async (req, res) => {
   cuentaBancariaRouter.put('/update/id/:id/nombre/:nombre/saldo/:saldo/activo/:activo', async (req, res) => {
       await cuentaBancariaController.update(req, res); 
   });
-
-/* module.exports = (app) => {
-    app.post('/restaurante/create/nombre/:nombre/fecha/:fecha/capacidad/:capacidad',
-        restauranteController.create);
-    app.get('/restaurante/list', restauranteController.list);
-    app.get('/restaurante/find/nombre/:nombre', restauranteController.find);
-    app.delete('/restaurante/delete/nombre/:nombre', restauranteController.delete);
-    app.put('/restaurante/update/nombre/:nombre', restauranteController.update)
-}; */
